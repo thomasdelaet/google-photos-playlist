@@ -1,2 +1,0 @@
-[console_scripts]
-gpp = gpp.cli:main
