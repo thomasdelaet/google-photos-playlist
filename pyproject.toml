@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68.0", "setuptools-scm>=8.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "google-photos-playlist"
+version = "0.1.0"
+description = "Generate Ken Burns slideshow videos from Google Photos albums"
+requires-python = ">=3.9"
+dependencies = [
+    "google-auth-oauthlib>=1.0",
+    "google-auth>=2.0",
+    "requests>=2.28",
+    "Pillow>=9.0",
+]
+
+[project.scripts]
+gpp = "gpp.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
